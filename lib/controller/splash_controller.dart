@@ -13,7 +13,7 @@ class SplashController extends GetxController{
 
   goToLoginPage(BuildContext context){
 
-    new Future.delayed(const Duration(seconds: 2), () {
+    new Future.delayed(const Duration(seconds: 4), () {
       Navigator.pushNamed(
         context,
         '/loginScreen',

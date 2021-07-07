@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       debugShowCheckedModeBanner: false,
-      home: LandingPage(),
+      home: SplashScreen(),
       routes: {
         //'/landingPage': (context) => LandinPage(),
         '/loginScreen': (context) => LoginScreen(),

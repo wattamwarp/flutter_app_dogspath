@@ -41,13 +41,13 @@ class _SplashScreenState extends State<SplashScreen> {
               style: TextStyle(
                 fontSize: 24,
                 fontWeight: FontWeight.bold,
-                color: DColors.greyCol,
+                color: DColors.greyTextCol,
               ),
             ),
             SizedBox(height: 10,),
             Text('by',
               style: TextStyle(
-                color: DColors.greyCol,
+                color: DColors.greyTextCol,
               ),),
             SizedBox(height: 10,),
             Text('VirtouStack Softwares Pvt. Ltd.',
