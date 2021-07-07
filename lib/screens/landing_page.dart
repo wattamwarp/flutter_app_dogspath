@@ -184,7 +184,7 @@ class _LandingPageState extends State<LandingPage> {
                                 child: Swiper(
                                   autoplay: false,
                                   loop: false,
-                                  viewportFraction: 0.3,
+                                  viewportFraction: 0.4,
                                   //scale: 0.3,
                                   itemBuilder:
                                       (BuildContext context, int subIndex) {
@@ -197,7 +197,7 @@ class _LandingPageState extends State<LandingPage> {
                                       child: Center(
                                         child: Text(
                                           _landingController.dataList[mainIndex]
-                                              .subPaths[subIndex].title,
+                                              .subPaths[subIndex].title +" >",
                                           style: TextStyle(
                                               color: _landingController
                                                           .currentIndex ==
@@ -208,11 +208,7 @@ class _LandingPageState extends State<LandingPage> {
                                       ),
                                     );
                                   },
-                                  onIndexChanged: (int index) {
-                                    _landingController.currentIndex.value =
-                                        index;
-                                    // print("the changed index is"+index.toString());
-                                  },
+
                                   itemCount: _landingController
                                       .dataList[mainIndex].subPaths.length,
                                   controller: _landingController
